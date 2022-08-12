@@ -484,7 +484,7 @@ If you want to fix it without spending money, you can do it by replacing AppleAL
 Q: I want macOS Monterey or Big Sur, but I have an NVIDIA card, can I use the Web Drivers on it?
 
 A:
-Yes, but not the actual Web Drivers. Thanks to the OCLP team, NVIDIA cards such as Maxwell and Pascal (GTX 9XX series and GTX 10XX series cards) can run macOS Monterey and Big Sur with Acceleration with a few caveats:
+Yes. Thanks to the OCLP team, NVIDIA cards such as Maxwell and Pascal (GTX 9XX series and GTX 10XX series cards) can run macOS Monterey and Big Sur with Acceleration with a few caveats:
 1. No Metal. This means anything Metal related will not work at all
 2. It's experimental, and buggy so do not expect the best from it
 
