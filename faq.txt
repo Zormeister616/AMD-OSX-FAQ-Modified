@@ -481,7 +481,7 @@ If you want to fix it without spending money, you can do it by replacing AppleAL
  - Reboot your system; if you get a kernel panic, force reboot the system again
  - Enable System Preferences -> VoodooHDA -> Enhance Stereo if your audio is choppy/delayed/distorted
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-Q: I want macOS Monterey or Big Sur, but I have an NVIDIA card, is it possible?
+Q: I want macOS Monterey or Big Sur, but I have an NVIDIA card, is it possible to run it with acceleration?
 
 A:
 Yes. Thanks to the OCLP team, NVIDIA cards such as Maxwell and Pascal (GTX 9XX series and GTX 10XX series cards) can run macOS Monterey and Big Sur with Acceleration with a few caveats:
