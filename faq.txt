@@ -481,3 +481,17 @@ If you want to fix it without spending money, you can do it by replacing AppleAL
  - Reboot your system; if you get a kernel panic, force reboot the system again
  - Enable System Preferences -> VoodooHDA -> Enhance Stereo if your audio is choppy/delayed/distorted
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+Q: I want macOS Monterey or Big Sur, but I have an NVIDIA card, is it possible?
+
+A:
+Yes. Thanks to the OCLP team, NVIDIA cards such as Maxwell and Pascal (GTX 9XX series and GTX 10XX series cards) can run macOS Monterey and Big Sur with Acceleration with a few caveats:
+1. No Metal. This means anything Metal related will not work at all
+2. It's experimental, and buggy so do not expect the best from it
+
+Now, onto how to get it running:
+ - Set NVRAM -> Add -> 7C4... -> car-active-config to 030A0000
+ - Add the boot arguments ngfxgl=1 ngfxcompat=1 amfi_get_out_of_my_way=0x1 ipc_control_port_options=0
+ - Add an entry for csr-active-config in NVRAM -> Delete -> 7C4... or reset NVRAM in the OpenCore picker
+ - Download and run OCLP (https://github.com/dortania/OpenCore-Legacy-Patcher/releases)
+ - After root-patching, make sure you allow the kexts in System Preferences and reboot
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
